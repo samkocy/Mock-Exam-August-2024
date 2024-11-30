@@ -7,11 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="7*"/>
-            <ColumnDefinition Width="68*"/>
-            <ColumnDefinition Width="85*"/>
-        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="tblkBookShop" HorizontalAlignment="Left" Margin="85,43,0,0" TextWrapping="Wrap" Text="Book Shop" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton x:Name="rbtAll" Content="All" HorizontalAlignment="Left" Margin="12,145,0,0" VerticalAlignment="Top" Height="15" Width="42"/>
+        <RadioButton x:Name="rbtFiction" Content="Fiction" HorizontalAlignment="Left" Margin="12,165,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtTech" Content="Tech" HorizontalAlignment="Left" Margin="12,185,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtNonFiction" Content="Non-Fiction" HorizontalAlignment="Left" Margin="12,205,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkTotalCost" HorizontalAlignment="Left" Margin="486,43,0,0" TextWrapping="Wrap" Text="Total Cost" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkTotalCostOutput" HorizontalAlignment="Left" Margin="582,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ListBox x:Name="lsbxAllBooks" HorizontalAlignment="Left" Height="200" Margin="142,101,0,0" VerticalAlignment="Top" Width="200" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ListBox x:Name="lsbxSelectedActivities" HorizontalAlignment="Left" Height="200" Margin="448,101,0,0" VerticalAlignment="Top" Width="200" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="btnRight" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="369,153,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="btnLeft" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="369,227,0,0" VerticalAlignment="Top" Width="50"/>
+        <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Margin="85,331,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top"/>
+        <Label x:Name="lblAllBooks" Content="All Books" HorizontalAlignment="Left" Margin="142,75,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSelectedActivities" Content="Selected activities" HorizontalAlignment="Left" Margin="448,75,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
