@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* 
+ * Name : Samuel Kocych
+ * Date : 30/11/2024
+ * Description:
+ * 
+ * Mock Exam August 2024
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
